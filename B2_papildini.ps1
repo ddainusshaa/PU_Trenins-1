@@ -10,3 +10,6 @@ $lielakie = Get-Process |
     Select-Object -First 10 Name, WorkingSet
 
 # TODO: saglabā $lielakie failā procesi.csv
+
+$lielakie | Export-Csv -Path procesi.csv -NoTypeInformation
+
